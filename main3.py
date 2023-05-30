@@ -47,19 +47,19 @@ def leer_datos_csv():
     return vehiculos
 
 
-# Create instances of vehicles
+# Crea instancias de vehiculos
 particular = Particular("Ford", "Fiesta", 4, "180", "500", 5)
 carga = Carga("Daft Trucks", "G 38", 10, 120, "1000", "20000")
 bicicleta = Bicicleta("Shimano", "MT Ranger", 2, "Carrera")
 motocicleta = Motocicleta(
     "BMW", "F800s", 2, "Deportiva", "2T", "Doble Viga", 21)
 
-# Save vehicle data to CSV
+# Save vehiculos data en CSV
 print("\nGuardando datos en archivo vehiculos.csv...")
 guardar_datos_csv([particular, carga, bicicleta, motocicleta])
 print("Datos guardados correctamente.")
 
-# Read vehicle data from CSV
+# lee vehiculos data de CSV
 print("\nLeyendo datos desde archivo vehiculos.csv...")
 vehiculos_csv = leer_datos_csv()
 for clase, lista in vehiculos_csv.items():
